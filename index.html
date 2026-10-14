@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yacine BOUDHRI – Portfolio BTS SIO SISR</title>
+<meta name="description" content="Portfolio de Yacine BOUDHRI, étudiant en BTS SIO option SISR. Recherche un stage de 4 à 5 semaines entre mai et août 2027.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23000'/%3E%3Crect x='11' y='11' width='10' height='10' fill='%23FFB000'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script>
+  /* Applique le thème mémorisé avant l'affichage (évite le clignotement) */
+  (function(){var t;try{t=localStorage.getItem('theme')}catch(e){}
+  if(!t)t='dark';
+  document.documentElement.dataset.theme=t;})();
+</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+
+<header class="top">
+  <div class="wrap bar">
+    <!-- À REMPLACER : initiale + nom -->
+    <a class="brand" href="#accueil">Y. BOUDHRI</a>
+    <nav class="menu" id="menu" aria-label="Navigation principale">
+      <a href="#accueil">Accueil</a>
+      <a href="#parcours">Parcours</a>
+      <a href="#competences">Compétences</a>
+      <a href="#realisations">Réalisations</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="iconbtn" id="theme" type="button" aria-label="Changer de thème clair ou sombre">◐</button>
+    <button class="iconbtn burger" id="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu">☰</button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ====================== ACCUEIL / PROFIL ====================== -->
+<section id="accueil" class="wrap hero">
+  <div>
+    <div class="id">
+      <!-- À REMPLACER : data-i = tes initiales (affichées si la photo manque). Photo : photo.jpg -->
+      <div class="avatar" data-i="YB"><img src="photo.jpg" alt="Photo de Yacine BOUDHRI" onerror="this.remove()"></div>
+      <span class="status"><i></i>Disponible pour un stage</span>
+    </div>
+    <!-- À REMPLACER : ton prénom et ton nom, chacun sur sa ligne -->
+    <h1>Yacine<br>Boudhri</h1>
+    <!-- À REMPLACER : un titre qui te représente -->
+    <p class="role">Étudiant en 1re année de BTS SIO, option SISR : systèmes, réseaux et infrastructures</p>
+    <!-- À REMPLACER : parcours, motivation, objectifs, métiers visés (4 à 6 lignes) -->
+    <p class="resume">Mon parcours m'a amené à tester différentes voies avant de réaliser ce qui me stimule réellement.
+	Aujourd'hui, je plonge et je découvre avec un regard neuf le domaine de l'informatique via le BTS SIO (option SISR).
+	Ce qui m'attire avant tout, c'est la promesse d'un quotidien stimulant.</p>
+	<p class="resume">Le domaine de la cybersécurité éveille particulièrement ma curiosité : j'aime l'idée d'enquêter sur des incidents, d'identifier des vulnérabilités et d'apporter des solutions.
+	C'est un choix à la fois passionné et pragmatique, tourné vers un secteur valorisant et ouvert sur le monde.
+	Je souhaite m'engager aujourd'hui dans cinq années d'études pour apprendre ce métier, étape par étape.</p>
+    <div class="stage">
+      <strong>Je recherche un stage en SISR</strong> (systèmes et réseaux) de 4 à 5 semaines, à réaliser entre mai et août 2027.
+    </div>
+    <div class="btns">
+      <!-- Mets ton CV dans le dossier sous le nom cv.pdf -->
+      <a class="btn" href="cv.pdf" target="_blank" rel="noopener">Voir mon CV</a>
+      <a class="btn ghost" href="#contact">Me contacter</a>
+    </div>
+  </div>
+
+  <!-- Schéma réseau interactif : survoler ou sélectionner un élément affiche la compétence liée -->
+  <div class="topo">
+    <svg viewBox="0 0 520 380" role="img" aria-label="Schéma d'un réseau d'entreprise : Internet, routeur, switch, serveur, poste client et borne Wi-Fi">
+      <path class="link" d="M260,66 V108"/>
+      <path class="link" d="M260,152 V208"/>
+      <path class="link" d="M260,252 C260,290 110,280 110,318"/>
+      <path class="link" d="M260,252 V318"/>
+      <path class="link" d="M260,252 C260,290 410,280 410,318"/>
+
+      <text class="vlan" x="130" y="296">VLAN 10</text>
+      <text class="vlan" x="268" y="290">VLAN 20</text>
+      <text class="vlan" x="352" y="296">VLAN 30</text>
+
+      <g class="node" tabindex="0" role="button" style="--d:.2s" data-title="Internet" data-text="Accès externe : tout le trafic passe par le routeur avant d'atteindre le réseau interne.">
+        <rect x="200" y="22" width="120" height="44" rx="22"/><text x="260" y="49" text-anchor="middle">Internet</text></g>
+      <g class="node" tabindex="0" role="button" style="--d:.5s" data-title="Routeur" data-text="Adressage IP, découpage en sous-réseaux et routage entre les réseaux. Travaillé sous Packet Tracer.">
+        <rect x="200" y="108" width="120" height="44" rx="10"/><text x="260" y="135" text-anchor="middle">Routeur</text></g>
+      <g class="node" tabindex="0" role="button" style="--d:.8s" data-title="Switch" data-text="Création de VLAN pour séparer les services du réseau et sécuriser les échanges.">
+        <rect x="200" y="208" width="120" height="44" rx="10"/><text x="260" y="235" text-anchor="middle">Switch</text></g>
+      <g class="node" tabindex="0" role="button" style="--d:1.1s" data-title="Serveur" data-text="Windows Server, Active Directory, DHCP et DNS : les services qui font fonctionner le réseau.">
+        <rect x="50" y="318" width="120" height="44" rx="10"/><text x="110" y="345" text-anchor="middle">Serveur</text></g>
+      <g class="node" tabindex="0" role="button" style="--d:1.2s" data-title="Poste client" data-text="Assistance aux utilisateurs, gestion de parc et résolution d'incidents.">
+        <rect x="200" y="318" width="120" height="44" rx="10"/><text x="260" y="345" text-anchor="middle">Poste client</text></g>
+      <g class="node" tabindex="0" role="button" style="--d:1.3s" data-title="Borne Wi-Fi" data-text="Configuration d'un SSID et sécurisation de l'accès sans fil en WPA2.">
+        <rect x="350" y="318" width="120" height="44" rx="10"/><text x="410" y="345" text-anchor="middle">Borne Wi-Fi</text></g>
+
+      <!-- Paquets qui circulent (démarrent quand les liens sont tracés) -->
+      <circle class="packet" r="4.5"><animateMotion dur="1.6s" begin="2s" repeatCount="indefinite" path="M260,66 V108"/></circle>
+      <circle class="packet" r="4.5"><animateMotion dur="1.8s" begin="2.4s" repeatCount="indefinite" path="M260,152 V208"/></circle>
+      <circle class="packet" r="4.5"><animateMotion dur="2.4s" begin="2.8s" repeatCount="indefinite" path="M260,252 C260,290 110,280 110,318"/></circle>
+      <circle class="packet" r="4.5"><animateMotion dur="1.8s" begin="3.1s" repeatCount="indefinite" path="M260,318 V252"/></circle>
+      <circle class="packet" r="4.5"><animateMotion dur="2.4s" begin="3.4s" repeatCount="indefinite" path="M410,318 C410,280 260,290 260,252"/></circle>
+      <circle class="packet" r="4.5"><animateMotion dur="1.6s" begin="3.6s" repeatCount="indefinite" path="M260,208 V152"/></circle>
+    </svg>
+    <p class="topo-info" id="topo-info"><b>Un réseau d'entreprise, étape par étape</b>Survolez ou sélectionnez un élément pour voir la compétence qui lui correspond.</p>
+  </div>
+</section>
+
+<!-- ====================== PARCOURS ====================== -->
+<section id="parcours" class="sec wrap">
+  <h2>Parcours de formation</h2>
+  <p class="lead">Du plus récent au plus ancien.</p>
+  <!-- Copie un bloc <li> pour ajouter une étape. Ne remonte pas avant le bac. -->
+  <ol class="tl">
+    <li>
+      <time>Octobre 2026 – Présent (en cours)</time>
+      <div>
+        <h3>BTS Services informatiques aux organisations, option SISR</h3>
+        <p class="where">CNED, formation initiale à distance</p>
+        <p>SISR signifie Solutions d'Infrastructure, Systèmes et Réseaux. L'option forme à installer, configurer, superviser et sécuriser les infrastructures d'une organisation, et à assister ses utilisateurs.</p>
+      </div>
+    </li>
+	  <li>
+		  <time>Septembre 2025 – Juillet 2026</time>
+		  <div>
+			  <h3>Licence Informatique</h3>
+			  <p class="where">Sorbonne Paris-Nord, campus de Villetaneuse</p>
+			  <p>Mon année de L1 en informatique m'a permis d'aborder les bases théoriques et la logique algorithmique, une première approche que j'ai choisi de rendre plus concrète et opérationnelle en intégrant le BTS SIO.</p>
+		  </div>
+	  </li>
+	  <li>
+		  <time>Septembre 2024 – Juillet 2025</time>
+		  <div>
+			  <h3>Parcours d'Accès Spécifique Santé (PASS)</h3>
+			  <p class="where">Université Paris-Cité, formation à distance et en présentiel</p>
+			  <p>Bien qu'éloignée de l'informatique, mon année en PASS a forgé ma persévérance et ma méthode de travail, des atouts indispensables pour mener à bien mon projet d'ingénierie sur cinq ans.</p>
+		  </div>
+	  </li>
+    <li>
+      <time>Juillet 2023</time>
+      <div>
+        <h3>Baccalauréat Général (Mathématiques & Physique-Chimie)</h3>
+        <p class="where">Lycée Jules Ferry, Paris 9e</p>
+        <p>Mention : Très Bien</p>
+      </div>
+    </li>
+    <!-- Certifications éventuelles : ajoute-les ici sous forme de <li> -->
+  </ol>
+</section>
+
+<!-- ====================== COMPÉTENCES ====================== -->
+<section id="competences" class="sec wrap">
+  <h2>Compétences techniques</h2>
+  <p class="lead">Les compétences qui seront abordées au cours de ma formation, en lien avec l'option SISR.</p>
+  <!-- Basé sur les thèmes du programme officiel du BTS SIO option SISR (2 ans). Garde ce que ton cours CNED aborde vraiment.
+       Logo : https://cdn.simpleicons.org/NOM (sinon une initiale s'affiche). -->
+  <div class="skills">
+    <div class="group">
+      <h3>Systèmes</h3>
+      <ul class="tools">
+        <li class="tool"><span class="logo" data-l="W"><img src="https://cdn.simpleicons.org/windows" alt=""></span>Windows</li>
+        <li class="tool"><span class="logo" data-l="WS"><img src="https://cdn.simpleicons.org/windows" alt=""></span>Windows Server</li>
+        <li class="tool"><span class="logo" data-l="L"><img src="https://cdn.simpleicons.org/linux" alt=""></span>Linux</li>
+        <li class="tool"><span class="logo" data-l="D"><img src="https://cdn.simpleicons.org/debian" alt=""></span>Debian</li>
+        <li class="tool"><span class="logo" data-l="V"><img src="https://cdn.simpleicons.org/virtualbox" alt=""></span>VirtualBox</li>
+      </ul>
+    </div>
+    <div class="group">
+      <h3>Réseaux</h3>
+      <ul class="tools">
+        <li class="tool"><span class="logo" data-l="P"><img src="https://cdn.simpleicons.org/cisco" alt=""></span>Packet Tracer</li>
+        <li class="tool"><span class="logo" data-l="W"><img src="https://cdn.simpleicons.org/wireshark" alt=""></span>Wireshark</li>
+        <li class="tool"><span class="logo" data-l="IP"></span>Adressage IP</li>
+        <li class="tool"><span class="logo" data-l="V"></span>VLAN</li>
+      </ul>
+    </div>
+    <div class="group">
+      <h3>Services et support</h3>
+      <ul class="tools">
+        <li class="tool"><span class="logo" data-l="AD"></span>Active Directory</li>
+        <li class="tool"><span class="logo" data-l="D"></span>DHCP / DNS</li>
+        <li class="tool"><span class="logo" data-l="G"></span>GLPI</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== RÉALISATIONS ====================== -->
+<section id="realisations" class="sec wrap">
+  <h2>Réalisations professionnelles</h2>
+  <p class="lead">Mes productions scolaires et professionnelles. Chaque fiche détaille le cadre, la démarche et les compétences du bloc 1 couvertes.</p>
+  <div class="chips" id="chips" role="group" aria-label="Filtrer les réalisations"></div>
+  <!-- Cartes générées automatiquement depuis projets.js -->
+  <div class="pgrid" id="pgrid"></div>
+</section>
+
+<!-- ====================== CONTACT ====================== -->
+<section id="contact" class="sec wrap">
+  <h2>Contact</h2>
+  <p class="lead">Une opportunité de stage ou une question ? Écrivez-moi.</p>
+  <div class="contact">
+    <div>
+      <ul class="infos">
+        <li><span>Ville</span>PARIS, France</li>
+        <li><span>Téléphone mobile</span><a href="tel:À Mettre">À Mettre</a></li>
+        <li><span>E-mail</span><a href="mailto:yboudhri02@gmail.com">yboudhri02@gmail.com</a></li>
+        <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/yacine-boudhri" target="_blank" rel="noopener">linkedin.com/in/yacine-boudhri</a></li>
+        <li><span>GitHub</span><a href="https://github.com/yboudhri" target="_blank" rel="noopener">https://github.com/yboudhri</a></li>
+      </ul>
+      <!-- Carte centrée sur la Seine-Saint-Denis. Autre ville : openstreetmap.org > recherche > Partager > HTML, colle le lien src -->
+      <iframe class="map" title="Carte de ma localisation" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=2.31%2C48.885%2C2.41%2C48.95&amp;layer=mapnik&amp;marker=48.9185%2C2.3600"></iframe>
+    </div>
+
+    <!-- Remplace VOTRE_ID par ton identifiant Formspree (voir LISEZ-MOI.md) -->
+    <form id="contact-form" action="https://formspree.io/f/mvkzbegj" method="POST">
+      <label>Nom<input type="text" name="nom" autocomplete="name" required></label>
+      <label>E-mail<input type="email" name="email" autocomplete="email" required></label>
+      <label>Sujet<input type="text" name="sujet" required></label>
+      <label>Message<textarea name="message" rows="6" required></textarea></label>
+      <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button class="btn" type="submit">Envoyer le message</button>
+      <p id="form-status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">© <span id="year">2026</span> Yacine BOUDHRI · Portfolio BTS SIO option SISR</div>
+</footer>
+
+<script src="projets.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
